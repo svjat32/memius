@@ -16,7 +16,7 @@ class RegistrationTask extends AsyncTask<String, Void, String> {
 
     protected String doInBackground(String... urls) {
         try {
-            String url = "http://91.225.131.161:8000/cgi-bin/reg.py";
+            String url = "http://91.225.131.175:8000/cgi-bin/reg.py";
             HttpResponse<String> jsonResponse = Unirest.post(url)
                     .header("content-type", "application/x-www-form-urlencoded")
                     .body("Username=" + "user" + "&Password=" + "pass" + "&E-mail=" + "email")
