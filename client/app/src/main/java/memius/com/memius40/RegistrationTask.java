@@ -14,7 +14,7 @@ class RegistrationTask extends AsyncTask<String, Void, String> {
 
     private Exception exception;
 
-    protected String doInBackground(String... urls) {
+    protected JSONObject doInBackground(String... urls) {
         try {
             String url = "http://91.225.131.175:8000/cgi-bin/reg.py";
             HttpResponse<String> jsonResponse = Unirest.post(url)
@@ -24,10 +24,10 @@ class RegistrationTask extends AsyncTask<String, Void, String> {
 
 
             JSONObject responseBody = new JSONObject(jsonResponse.getBody().toString());
-            String status = responseBody.getString("Status");
+            //String status = responseBody.getString("Status");
 
 
-            return "ok";
+            return responseBody;
         }
         catch(Exception e) {
             System.out.println("Error: " + e.toString());
