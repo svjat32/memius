@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e4b918a-59fd-453e-bb23-d0175dc5ae76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cgi-bin/Dislike.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cgi-bin/Logout.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -76,11 +76,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dislike.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dislike.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cgi-bin/Dislike.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logout.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cgi-bin/Logout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -134,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendMemeId.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/Like.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/Dislike.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/Logout.py" />
       </list>
     </option>
   </component>
@@ -400,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511022892266</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add Dislike">
+      <created>1511022950063</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1511022950063</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -479,7 +499,8 @@
     <MESSAGE value="get Recommend Meme Id" />
     <MESSAGE value="Report" />
     <MESSAGE value="Add Like" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Like" />
+    <MESSAGE value="Add Dislike" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Dislike" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -742,6 +763,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Logout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
