@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e4b918a-59fd-453e-bb23-d0175dc5ae76" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ServerDB.db" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServerDB.db" afterPath="$PROJECT_DIR$/src/ServerDB.db" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server.iml" afterPath="$PROJECT_DIR$/Server.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cgi-bin/Registration.py" afterPath="$PROJECT_DIR$/src/cgi-bin/Registration.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cgi-bin/Login.py" afterPath="$PROJECT_DIR$/src/cgi-bin/Login.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Registration.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Registration.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cgi-bin/Registration.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+            <state relative-caret-position="241">
+              <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -40,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetRecommendedMeme.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetRecommendedMeme.py">
+      <file leaf-file-name="Login.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cgi-bin/Login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+            <state relative-caret-position="177">
+              <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -76,6 +74,7 @@
         <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendMeme.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendedMeme.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/Registration.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/Login.py" />
       </list>
     </option>
   </component>
@@ -311,7 +310,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -384,8 +383,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/Registration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="36" lean-forward="true" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state relative-caret-position="241">
+          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
