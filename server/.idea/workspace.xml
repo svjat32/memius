@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e4b918a-59fd-453e-bb23-d0175dc5ae76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cgi-bin/GetUserWall.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../client/.idea/vcs.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/.gitignore" afterPath="$PROJECT_DIR$/../client/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/.idea/modules.xml" afterPath="$PROJECT_DIR$/../client/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../client/app/src/main/java/memius/com/memius40/RegistrationTask.java" afterPath="$PROJECT_DIR$/../client/app/src/main/java/memius/com/memius40/RegistrationTask.java" />
+    <list default="true" id="0e4b918a-59fd-453e-bb23-d0175dc5ae76" name="Default" comment="add .gitignore">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GetUserHead.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserHead.py">
+      <file leaf-file-name="GetUserWall.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserWall.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -32,11 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetUserWall.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserWall.py">
+      <file leaf-file-name="GetUserLikesCount.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserLikesCount.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="238">
+              <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetMeme.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetMeme.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -70,6 +78,9 @@
         <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendedMeme.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/GetUserHead.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/GetUserWall.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/GetUserLikesCount.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" />
       </list>
     </option>
   </component>
@@ -287,7 +298,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511019139528</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Get User Wall">
+      <created>1511019258834</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511019258834</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Get Users Likes Count">
+      <created>1511019591011</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511019591011</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -329,7 +354,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Get User Head" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get User Head" />
+    <MESSAGE value="Get User Wall" />
+    <MESSAGE value="Get Users Likes Count" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get Users Likes Count" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -482,6 +509,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetSubscriptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -490,10 +527,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetSubscriptions.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserLikesCount.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="53" lean-forward="false" selection-start-line="14" selection-start-column="53" selection-end-line="14" selection-end-column="53" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -512,8 +557,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserWall.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetMeme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
