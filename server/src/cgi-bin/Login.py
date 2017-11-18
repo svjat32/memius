@@ -12,9 +12,9 @@ if username is None or password is None or rememberMe is None:
 else:
     status = "Success"
 
-answer = json.dumps({"Status": status, "Container": {"SessionId": "",
-                                                     "StartTime": "",
-                                                     "EndTime": ""}})
+answer = json.dumps({"Status": status, "Container": {"SessionId": "String",
+                                                     "StartTime": "String",
+                                                     "EndTime": "String"}})
 
 
 print("Content-type: application/json")
