@@ -1,4 +1,4 @@
-package com.memius.memius;
+package memius.com.memius40;
 
 import org.junit.Test;
 

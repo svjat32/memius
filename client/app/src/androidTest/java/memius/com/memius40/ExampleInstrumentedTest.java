@@ -1,4 +1,4 @@
-package com.memius.memius;
+package memius.com.memius40;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.memius.memius", appContext.getPackageName());
+        assertEquals("memius.com.memius40", appContext.getPackageName());
     }
 }
