@@ -65,11 +65,16 @@ public class MainActivity extends AppCompatActivity implements OnTaskCompleted{
             e.printStackTrace();
         }
         if(res.equals("Success")){
+            try {
+                GlobalVars.sessionID = result.getJSONObject("Container").getString("SessionId");
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
             Intent intent = new Intent(this,Main3Activity.class);
             startActivity(intent);
         }
         else{
-            //text.setText("Wrong password or login");
+            text.setText("Wrong password or login");
         }
     }
 }

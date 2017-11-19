@@ -30,13 +30,13 @@ class RegistrationTask extends AsyncTask<String, Void, JSONObject> {
         try {
 
             String url = GlobalVars.url + "Registration.py";
-            HttpResponse<String> jsonResponse = Unirest.post(url)
+            HttpResponse<String> response = Unirest.post(url)
                     .header("content-type", "application/x-www-form-urlencoded")
                     .body("Username=" + login.getText().toString() + "&Password=" + password.getText().toString())
                     .asString();
 
 
-            JSONObject responseBody = new JSONObject(jsonResponse.getBody().toString());
+            JSONObject responseBody = new JSONObject(response.getBody().toString());
 
             return responseBody;
         }

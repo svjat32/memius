@@ -1,8 +1,5 @@
 package memius.com.memius40;
 
-/**
- * Created by lexay on 19.11.2017.
- */
 
 import android.os.AsyncTask;
 import android.widget.EditText;
@@ -19,13 +16,10 @@ import java.util.concurrent.ExecutionException;
 
 class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
     private  OnTaskCompleted listener;
-    //    private Exception exception;
-    EditText login;
-    EditText password;
-    public GetMemeTask ( OnTaskCompleted listener,EditText l, EditText r){
+    private Exception exception;
+
+    public GetMemeTask ( OnTaskCompleted listener){
         this.listener = listener;
-        login = l;
-        password = r;
     }
 
 
@@ -33,16 +27,15 @@ class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
 
         try {
 
-            String url = "http://91.225.131.175:8000/cgi-bin/Registration.py";
-            HttpResponse<String> jsonResponse = Unirest.post(url)
+            String url = GlobalVars.url + "GetMeme.py";
+            HttpResponse<String> response = Unirest.post(url)
                     .header("content-type", "application/x-www-form-urlencoded")
-                    .body("Username=" + login.getText().toString() + "&Password=" + password.getText().toString())
+                    .body("SessionId=" + GlobalVars.sessionID + "&MemeId=" + "1")
                     .asString();
+            String bodyString = response.getBody();
+            JSONObject json = new JSONObject(bodyString);
 
-
-            JSONObject responseBody = new JSONObject(jsonResponse.getBody().toString());
-
-            return responseBody;
+            return json;
         }
         catch(Exception e) {
             System.out.println("Error: " + e.toString());
