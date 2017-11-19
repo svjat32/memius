@@ -5,6 +5,16 @@ import android.widget.EditText;
 
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.Unirest;
+
+import org.json.JSONObject;
+
+import java.util.concurrent.ExecutionException;
+
+import android.os.AsyncTask;
+import android.widget.EditText;
+
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
 import org.json.*;
 
 import java.util.concurrent.ExecutionException;
@@ -13,12 +23,12 @@ import java.util.concurrent.ExecutionException;
  * Created by lexay on 18.11.2017.
  */
 
-class RegistrationTask extends AsyncTask<String, Void, JSONObject> {
+class LoginTask extends AsyncTask<String, Void, JSONObject> {
     private  OnTaskCompleted listener;
-//    private Exception exception;
+    //    private Exception exception;
     EditText login;
     EditText password;
-    public RegistrationTask ( OnTaskCompleted listener,EditText l, EditText r){
+    public LoginTask ( OnTaskCompleted listener, EditText l,EditText r){
         this.listener = listener;
         login = l;
         password = r;
@@ -32,7 +42,7 @@ class RegistrationTask extends AsyncTask<String, Void, JSONObject> {
             String url = "http://91.225.131.175:8000/cgi-bin/Registration.py";
             HttpResponse<String> jsonResponse = Unirest.post(url)
                     .header("content-type", "application/x-www-form-urlencoded")
-                    .body("Username=" + login.getText().toString() + "&Password=" + password.getText().toString())
+                    .body("Username=" + login.getText() + "&Password=" + password.getText()+"&RememberMe=true")
                     .asString();
 
 
