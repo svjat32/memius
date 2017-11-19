@@ -2,7 +2,7 @@ import cgi
 import json
 import sqlite3
 import DefUserId
-
+import base64
 
 form = cgi.FieldStorage()
 
@@ -23,11 +23,9 @@ else:
         cursor.execute("SELECT Meme, Date_and_time FROM Memes WHERE Id = ?", (meme_id,))
 
         for d in cursor.fetchall():
+            base64_meme = base64.b64encode(bytearray(d[0]))
             date_and_time = str(d[1])
-            results = bytearray(d[0])
-            meme = ""
-            for c in results:
-                meme = meme + chr(c)
+
 
 
         cursor.execute("SELECT * FROM Likes WHERE Meme_id = ?", (meme_id,)).rowcount
@@ -45,7 +43,7 @@ else:
         container["DateAndTime"] = date_and_time
         container["LikeCount"] = like_count
         container["DislikeCount"] = dislike_count
-        container["Meme"] = meme
+        container["Meme"] = str(base64_meme)
         answer["Container"] = container
     except:
         answer["Status"] = "Failure"
