@@ -1,7 +1,8 @@
 import cgi
 import json
 import sqlite3
-import base64
+import DefUserId
+
 
 form = cgi.FieldStorage()
 
@@ -14,10 +15,10 @@ if session_id is None or meme_id is None:
     answer["Status"] = "Failure"
 else:
     try:
+        user_id = DefUserId.GetUserIdBySessionId(session_id)
+
         connection = sqlite3.connect("ServerDB.db")
         cursor = connection.cursor()
-        cursor.execute("SELECT User_id FROM Sessions WHERE Id = ?", (session_id,))
-        user_id = int(*cursor.fetchall()[0])
 
         cursor.execute("SELECT Meme, Date_and_time FROM Memes WHERE Id = ?", (meme_id,))
 

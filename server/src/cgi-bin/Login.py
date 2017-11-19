@@ -40,10 +40,15 @@ else:
                        (str(session_id), user_id, str(start_time), str(end_time)))
         connection.commit()
         connection.close()
+
+        answer["Status"] = "Success"
+        container = {}
+        container["SessionId"] = str(session_id)
+        container["StartTime"] = str(start_time)
+        container["EndTime"] = str(end_time)
+        answer["Container"] = container
     except:
         answer["Status"] = "Failure"
-    else:
-        answer["Status"] = "Success"
 
 print("Content-type: application/json")
 print()

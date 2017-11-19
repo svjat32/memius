@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e4b918a-59fd-453e-bb23-d0175dc5ae76" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cgi-bin/AddMeme.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServerDB.db" afterPath="$PROJECT_DIR$/src/ServerDB.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cgi-bin/Dislike.py" afterPath="$PROJECT_DIR$/src/cgi-bin/Dislike.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" afterPath="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cgi-bin/Like.py" afterPath="$PROJECT_DIR$/src/cgi-bin/Like.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cgi-bin/Login.py" afterPath="$PROJECT_DIR$/src/cgi-bin/Login.py" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +33,8 @@
       <file leaf-file-name="GetMeme.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetMeme.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="35" />
+            <state relative-caret-position="48">
+              <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -38,35 +42,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Like.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cgi-bin/Like.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dislike.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cgi-bin/Dislike.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="38" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Login.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cgi-bin/Login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="25" />
+            <state relative-caret-position="215">
+              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetUserWall.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserWall.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -97,15 +89,17 @@
         <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendMeme.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/Registration.py" />
-        <option value="$PROJECT_DIR$/src/cgi-bin/Login.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendedMeme.py" />
-        <option value="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" />
-        <option value="$PROJECT_DIR$/src/cgi-bin/Like.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/UserId.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/Dislike.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/Like.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/AddMeme.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/Login.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-38" />
     <option name="y" value="9" />
     <option name="width" value="1378" />
@@ -163,11 +157,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server\src" />
       <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server\src\cgi-bin" />
+      <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server\src\cgi-bin\Functions" />
+      <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server\src" />
       <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server" />
       <recent name="C:\Users\Alexander\Desktop\memius\Server" />
-      <recent name="C:\Users\Alexander\Desktop\memius\Server\.idea\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -301,7 +295,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="7" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -424,10 +418,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/DefUserId.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Like.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Dislike.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/AddMeme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserWall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetMeme.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="35" />
+        <state relative-caret-position="48">
+          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -436,28 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/Login.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Like.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Dislike.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="215">
+          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>

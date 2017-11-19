@@ -2,6 +2,7 @@ import cgi
 import json
 import sqlite3
 import datetime
+import DefUserId
 
 form = cgi.FieldStorage()
 
@@ -21,13 +22,11 @@ else:
     second = datetime.datetime.now().second
     date_and_time = datetime.datetime(year, month, day, hour, minute, second)
     try:
-        connection = sqlite3.connect("ServerDB.db")
-        cursor = connection.cursor()
-
-        cursor.execute("SELECT User_id FROM Sessions WHERE Id = ?", (session_id,))
-        user_id = int(cursor.fetchone()[0])
+        user_id = DefUserId.GetUserIdBySessionId(session_id)
 
         #TODO: Check dislikes
+        connection = sqlite3.connect("ServerDB.db")
+        cursor = connection.cursor()
 
         cursor.execute("INSERT INTO Likes (Meme_id, User_id, Date_and_time) VALUES (?, ?, ?)", (meme_id, user_id, date_and_time))
 
