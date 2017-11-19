@@ -20,12 +20,12 @@ else:
         connection = sqlite3.connect("ServerDB.db")
         cursor = connection.cursor()
 
-        cursor.execute("SELECT Meme, Date_and_time FROM Memes WHERE Id = ?", (meme_id,))
+        cursor.execute("SELECT User_id, Meme, Date_and_time FROM Memes WHERE Id = ?", (meme_id,))
 
         for d in cursor.fetchall():
-            base64_meme = base64.b64encode(bytearray(d[0]))
-            date_and_time = str(d[1])
-
+            author_id = int(d[0])
+            base64_meme = base64.b64encode(bytearray(d[1]))
+            date_and_time = str(d[2])
 
 
         cursor.execute("SELECT * FROM Likes WHERE Meme_id = ?", (meme_id,)).rowcount
@@ -39,7 +39,7 @@ else:
 
         answer["Status"] = "Success"
         container = {}
-        container["AuthorId"] = user_id
+        container["AuthorId"] = author_id
         container["DateAndTime"] = date_and_time
         container["LikeCount"] = like_count
         container["DislikeCount"] = dislike_count
