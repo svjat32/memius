@@ -44,17 +44,33 @@ public class MainActivity extends AppCompatActivity implements OnTaskCompleted{
         login = (EditText)findViewById (R.id.editText3);
         EditText password;
         password = (EditText)findViewById (R.id.editText4);
-//        LoginTask logTesak = new RegistrationTask(this,login,password);
-//        logTesak.execute("");
-//        task = logTesak;
+        LoginTask logTesak = new LoginTask(this,login,password);
+        logTesak.execute("");
+        task = logTesak;
     }
 
     @Override
     public void onTaskComleted() throws ExecutionException, InterruptedException {
         JSONObject result = task.get();
         TextView text;
-        text = (TextView)findViewById (R.id.textView4);
-        text.setText(result.toString());
+        text = (TextView)findViewById (R.id.textView5);
+        //text.setText("loh");
+        String res = "Failure";
+//        TextView textView2;
+//        textView2 = (TextView) findViewById(R.id.textView11);
+        try {
+            res = result.getString("Status");
+            text.setText(res);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        if(res.equals("Success")){
+            Intent intent = new Intent(this,Main3Activity.class);
+            startActivity(intent);
+        }
+        else{
+            //text.setText("Wrong password or login");
+        }
     }
 }
 

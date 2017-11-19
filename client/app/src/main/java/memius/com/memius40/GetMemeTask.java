@@ -1,5 +1,9 @@
 package memius.com.memius40;
 
+/**
+ * Created by lexay on 19.11.2017.
+ */
+
 import android.os.AsyncTask;
 import android.widget.EditText;
 
@@ -13,12 +17,12 @@ import java.util.concurrent.ExecutionException;
  * Created by lexay on 18.11.2017.
  */
 
-class RegistrationTask extends AsyncTask<String, Void, JSONObject> {
+class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
     private  OnTaskCompleted listener;
-//    private Exception exception;
+    //    private Exception exception;
     EditText login;
     EditText password;
-    public RegistrationTask ( OnTaskCompleted listener,EditText l, EditText r){
+    public GetMemeTask ( OnTaskCompleted listener,EditText l, EditText r){
         this.listener = listener;
         login = l;
         password = r;
@@ -29,7 +33,7 @@ class RegistrationTask extends AsyncTask<String, Void, JSONObject> {
 
         try {
 
-            String url = GlobalVars.url + "Registration.py";
+            String url = "http://91.225.131.175:8000/cgi-bin/Registration.py";
             HttpResponse<String> jsonResponse = Unirest.post(url)
                     .header("content-type", "application/x-www-form-urlencoded")
                     .body("Username=" + login.getText().toString() + "&Password=" + password.getText().toString())

@@ -1,5 +1,6 @@
 package memius.com.memius40;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
@@ -63,7 +64,8 @@ public class Main2Activity extends AppCompatActivity implements OnTaskCompleted 
             e.printStackTrace();
         }
         if(res.equals("Success")){
-
+            Intent intent = new Intent(this,Main3Activity.class);
+            startActivity(intent);
         }
         else{
             TextView text;

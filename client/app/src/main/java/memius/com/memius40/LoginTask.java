@@ -39,10 +39,10 @@ class LoginTask extends AsyncTask<String, Void, JSONObject> {
 
         try {
 
-            String url = "http://91.225.131.175:8000/cgi-bin/Registration.py";
+            String url = GlobalVars.url + "Login.py";
             HttpResponse<String> jsonResponse = Unirest.post(url)
                     .header("content-type", "application/x-www-form-urlencoded")
-                    .body("Username=" + login.getText() + "&Password=" + password.getText()+"&RememberMe=true")
+                    .body("Username=" + login.getText().toString() + "&Password=" + password.getText().toString()+"&RememberMe=true")
                     .asString();
 
 
