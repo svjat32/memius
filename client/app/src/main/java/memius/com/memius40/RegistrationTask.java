@@ -48,7 +48,7 @@ class RegistrationTask extends AsyncTask<String, Void, JSONObject> {
 
     protected void onPostExecute(JSONObject feed) {
         try {
-            listener.onTaskComleted();
+            listener.onTaskCompleted();
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {

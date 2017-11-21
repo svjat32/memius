@@ -1,6 +1,5 @@
 package memius.com.memius40;
 
-
 import android.os.AsyncTask;
 import android.widget.EditText;
 
@@ -14,13 +13,15 @@ import java.util.concurrent.ExecutionException;
  * Created by lexay on 18.11.2017.
  */
 
-class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
-    private  OnTaskCompleted listener;
-    private Exception exception;
-    String a;
-    public GetMemeTask ( OnTaskCompleted listener,Integer i){
-        a=String.valueOf(i);
+class LikeTask extends AsyncTask<String, Void, JSONObject> {
+    private  OnTaskCompleted2 listener;
+    //    private Exception exception;
+    EditText login;
+    EditText password;
+    public LikeTask ( OnTaskCompleted2 listener,EditText l, EditText r){
         this.listener = listener;
+        login = l;
+        password = r;
     }
 
 
@@ -28,15 +29,16 @@ class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
 
         try {
 
-            String url = GlobalVars.url + "GetMeme.py";
+            String url = GlobalVars.url + "Like.py";
             HttpResponse<String> response = Unirest.post(url)
                     .header("content-type", "application/x-www-form-urlencoded")
-                    .body("SessionId=" + GlobalVars.sessionID + "&MemeId="+a)
+                    .body("SessionId=" + GlobalVars.sessionID + "&MemeId=" + password.getText().toString())
                     .asString();
-            String bodyString = response.getBody();
-            JSONObject json = new JSONObject(bodyString);
 
-            return json;
+
+            JSONObject responseBody = new JSONObject(response.getBody().toString());
+
+            return responseBody;
         }
         catch(Exception e) {
             System.out.println("Error: " + e.toString());
@@ -46,7 +48,7 @@ class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
 
     protected void onPostExecute(JSONObject feed) {
         try {
-            listener.onTaskCompleted();
+            listener.onTaskComleted2();
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {

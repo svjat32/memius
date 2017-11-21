@@ -5,7 +5,8 @@ package memius.com.memius40;
  */
 
 public class GlobalVars {
-    public static String url = "http://91.225.131.175:8000/cgi-bin/";
+    //public static String url = "http://91.225.131.175:8000/cgi-bin/";
+    public static String url = "http://192.168.1.192:8080/cgi-bin/";
     public static String sessionID;
 
 }

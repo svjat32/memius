@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements OnTaskCompleted{
     }
 
     @Override
-    public void onTaskComleted() throws ExecutionException, InterruptedException {
+    public void onTaskCompleted() throws ExecutionException, InterruptedException {
         JSONObject result = task.get();
         TextView text;
         text = (TextView)findViewById (R.id.textView5);

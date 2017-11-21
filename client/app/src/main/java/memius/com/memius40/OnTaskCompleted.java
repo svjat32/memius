@@ -7,5 +7,5 @@ import java.util.concurrent.ExecutionException;
  */
 
 public interface OnTaskCompleted {
-    void onTaskComleted() throws ExecutionException, InterruptedException;
+    void onTaskCompleted() throws ExecutionException, InterruptedException;
 }

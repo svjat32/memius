@@ -1,5 +1,8 @@
 package memius.com.memius40;
 
+/**
+ * Created by lexay on 19.11.2017.
+ */
 
 import android.os.AsyncTask;
 import android.widget.EditText;
@@ -14,13 +17,15 @@ import java.util.concurrent.ExecutionException;
  * Created by lexay on 18.11.2017.
  */
 
-class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
-    private  OnTaskCompleted listener;
-    private Exception exception;
-    String a;
-    public GetMemeTask ( OnTaskCompleted listener,Integer i){
-        a=String.valueOf(i);
+class DislikeTask extends AsyncTask<String, Void, JSONObject> {
+    private  OnTaskCompleted3 listener;
+    //    private Exception exception;
+    EditText login;
+    EditText password;
+    public DislikeTask ( OnTaskCompleted3 listener,EditText l, EditText r){
         this.listener = listener;
+        login = l;
+        password = r;
     }
 
 
@@ -28,15 +33,16 @@ class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
 
         try {
 
-            String url = GlobalVars.url + "GetMeme.py";
+            String url = GlobalVars.url + "Dislike.py";
             HttpResponse<String> response = Unirest.post(url)
                     .header("content-type", "application/x-www-form-urlencoded")
-                    .body("SessionId=" + GlobalVars.sessionID + "&MemeId="+a)
+                    .body("Username=" + login.getText().toString() + "&Password=" + password.getText().toString())
                     .asString();
-            String bodyString = response.getBody();
-            JSONObject json = new JSONObject(bodyString);
 
-            return json;
+
+            JSONObject responseBody = new JSONObject(response.getBody().toString());
+
+            return responseBody;
         }
         catch(Exception e) {
             System.out.println("Error: " + e.toString());
@@ -46,7 +52,7 @@ class GetMemeTask extends AsyncTask<String, Void, JSONObject> {
 
     protected void onPostExecute(JSONObject feed) {
         try {
-            listener.onTaskCompleted();
+            listener.onTaskComleted3();
         } catch (ExecutionException e) {
             e.printStackTrace();
         } catch (InterruptedException e) {
