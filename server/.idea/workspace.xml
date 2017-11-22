@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e4b918a-59fd-453e-bb23-d0175dc5ae76" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server.iml" afterPath="$PROJECT_DIR$/Server.iml" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cgi-bin/GetNewMemesId.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/cgi-bin/GetUserLikesDislikes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ServerDB.db" afterPath="$PROJECT_DIR$/src/ServerDB.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" afterPath="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cgi-bin/GetUserWall.py" afterPath="$PROJECT_DIR$/src/cgi-bin/GetUserWall.py" />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +35,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Registration.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cgi-bin/Registration.py">
+      <file leaf-file-name="GetMeme.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetMeme.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="391">
               <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+=======
+            <state relative-caret-position="215">
+              <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -41,8 +55,13 @@
       <file leaf-file-name="Login.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cgi-bin/Login.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="595">
               <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+=======
+            <state relative-caret-position="80">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -50,6 +69,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="GetUserLikesCount.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserLikesCount.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,6 +99,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+      <file leaf-file-name="GetNewMemesId.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetNewMemesId.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -108,9 +135,17 @@
       <list>
         <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendMeme.py" />
-        <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendedMeme.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/Registration.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/GetRecommendedMeme.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/UserId.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/Dislike.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/Like.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/AddMeme.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/GetUserWall.py" />
         <option value="$PROJECT_DIR$/src/cgi-bin/Login.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/GetMeme.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/GetUserLikesDislikes.py" />
+        <option value="$PROJECT_DIR$/src/cgi-bin/GetNewMemesId.py" />
       </list>
     </option>
   </component>
@@ -161,11 +196,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server\src" />
       <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server\src\cgi-bin" />
+      <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server\src\cgi-bin\Functions" />
+      <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server\src" />
       <recent name="C:\Users\Alexander\Dropbox\SPBU\Other\Hackaton\memius\server" />
       <recent name="C:\Users\Alexander\Desktop\memius\Server" />
-      <recent name="C:\Users\Alexander\Desktop\memius\Server\.idea\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -307,7 +342,15 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24528302" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2610063" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -449,6 +492,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+          <folding />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
         </state>
       </provider>
     </entry>
@@ -472,16 +519,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetRecommendMeme.py" />
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetRecommendMeme.py" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetRecommendedMeme.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/Registration.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
+        <state relative-caret-position="241">
           <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -489,10 +532,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetRecommendMemeId.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetRecommendedMeme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Server.py">
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Registration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/DefUserId.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Like.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/Dislike.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/AddMeme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserLikesDislikes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/Login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetMeme.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserWall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -501,8 +642,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetUserLikesCount.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="80">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cgi-bin/GetNewMemesId.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="73" column="45" lean-forward="true" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
+>>>>>>> fe423feda3a195e142879e8f635518540aac6ba6
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
